@@ -18,7 +18,7 @@ android {
 
     defaultConfig {
         applicationId = "com.dst511s.dst_skillconnect"
-        minSdk = 35
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -44,6 +44,16 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+
+    // Add KAPT specific options
+    kapt {
+        correctErrorTypes = true
+        useBuildCache = true
+        mapDiagnosticLocations = true
+        arguments {
+            arg("dagger.fastInit", "enabled")
+        }
     }
 }
 
