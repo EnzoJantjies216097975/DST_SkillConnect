@@ -7,7 +7,8 @@ plugins {
     // Uncomment when ready to add Firebase
     // id("com.google.gms.google-services")
     id("kotlin-parcelize")
-    id("kotlin-kapt")
+    // Use kapt plugin from the kotlin-kapt plugin applied in root build.gradle
+    id("org.jetbrains.kotlin.kapt")
     // Uncomment when using Hilt
     id("com.google.dagger.hilt.android")
 }
@@ -38,6 +39,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+
+        // Add isCoreLibraryDesugaringEnabled for compatibility
+        isCoreLibraryDesugaringEnabled = true
     }
     kotlinOptions {
         jvmTarget = "17"
