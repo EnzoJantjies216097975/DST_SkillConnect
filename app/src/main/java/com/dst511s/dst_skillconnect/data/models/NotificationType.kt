@@ -1,0 +1,6 @@
+package com.dst511s.dst_skillconnect.data.models
+
+enum class NotificationType {
+    JOB_MATCH, APPLICATION_UPDATE, WORKSHOP_REMINDER, SKILL_VERIFICATION,
+    COMPANY_UPDATE, MESSAGE, SYSTEM_UPDATE, ACHIEVEMENT
+}
