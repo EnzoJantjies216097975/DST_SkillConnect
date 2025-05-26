@@ -5,17 +5,17 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.dst511s.dst_skillconnect.data.Screen
-import com.dst511s.dst_skillconnect.screens.auth.LoginScreen
-import com.dst511s.dst_skillconnect.screens.auth.RegisterScreen
-import com.dst511s.dst_skillconnect.screens.auth.UserTypeSelectionScreen
-import com.dst511s.dst_skillconnect.screens.home.HomeScreen
-import com.dst511s.dst_skillconnect.screens.jobs.JobDetailScreen
-import com.dst511s.dst_skillconnect.screens.jobs.JobsScreen
-import com.dst511s.dst_skillconnect.screens.onboarding.OnboardingScreen
-import com.dst511s.dst_skillconnect.screens.profile.ProfileScreen
-import com.dst511s.dst_skillconnect.screens.skills.SkillAssessmentScreen
-import com.dst511s.dst_skillconnect.screens.workshop.WorkshopsScreen
+import com.dst511s.dst_skillconnect.unsorted.data.Screen
+import com.dst511s.dst_skillconnect.features.auth.screens.LoginScreen
+import com.dst511s.dst_skillconnect.features.auth.screens.RegisterScreen
+import com.dst511s.dst_skillconnect.features.auth.screens.UserTypeSelectionScreen
+import com.dst511s.dst_skillconnect.features.home.screens.HomeScreen
+import com.dst511s.dst_skillconnect.features.jobs.screens.JobDetailScreen
+import com.dst511s.dst_skillconnect.features.jobs.screens.JobsScreen
+import com.dst511s.dst_skillconnect.features.onboarding.screens.OnboardingScreen
+import com.dst511s.dst_skillconnect.features.profile.screens.ProfileScreen
+import com.dst511s.dst_skillconnect.features.skills.screens.SkillAssessmentScreen
+import com.dst511s.dst_skillconnect.features.workshops.screens.WorkshopsScreen
 
 @Composable
 fun SkillConnectNavHost(

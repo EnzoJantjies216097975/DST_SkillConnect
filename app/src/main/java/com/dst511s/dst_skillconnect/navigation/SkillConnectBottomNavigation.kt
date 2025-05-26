@@ -17,8 +17,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.dst511s.dst_skillconnect.data.Screen
-import com.dst511s.dst_skillconnect.data.models.BottomNavItem
+import com.dst511s.dst_skillconnect.unsorted.data.Screen
+import com.dst511s.dst_skillconnect.unsorted.data.BottomNavItem
 
 @Composable
 fun SkillConnectBottomNavigation(
